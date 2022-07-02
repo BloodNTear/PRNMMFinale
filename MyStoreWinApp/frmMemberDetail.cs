@@ -56,7 +56,7 @@ namespace MyStoreWinApp
 
                 if (txtMemberName.Text.Trim().Equals("")) throw new Exception("Name cannot be empty!");
                 if (txtEmail.Text.Trim().Equals("")) throw new Exception("Email cannot be empty!");
-                if (!emailRegex.IsMatch(txtEmail.Text.Trim())) throw new Exception("Email must match the Regular Expression: example@examle");
+                if (!emailRegex.IsMatch(txtEmail.Text.Trim())) throw new Exception("Email must match the Regular Expression: example@examle.example");
                 if (txtPassword.Text.Trim().Length < 6) throw new Exception("Password must be 6 character or more");
                 if (txtCity.Text.Trim().Equals("")) throw new Exception("City cannot be empty!");
                 if (txtCountry.Text.Trim().Equals("")) throw new Exception("Country cannot be empty!");
