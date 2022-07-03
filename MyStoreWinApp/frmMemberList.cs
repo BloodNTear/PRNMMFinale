@@ -84,21 +84,7 @@ namespace MyStoreWinApp
 
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            string search = txtSearch.Text;
-            repository = new MemberRepository();
-            List<MemberObject> members = new List<MemberObject>();
-            members = repository.SearchByName(search);
-            if(members.Count == 0)
-            {
-                MessageBox.Show("No Result Found");
-                return;
-            }else
-            {
-                LoadMemberList(members);
-            }
-        }
+        
 
         private void LoadMemberList(List<MemberObject> list)
         {
@@ -200,6 +186,23 @@ namespace MyStoreWinApp
             repository = new MemberRepository();
             List<MemberObject> members = new List<MemberObject>();
             members = repository.SearchByCountry(search);
+            if (members.Count == 0)
+            {
+                MessageBox.Show("No Result Found");
+                return;
+            }
+            else
+            {
+                LoadMemberList(members);
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string search = txtSearch.Text;
+            repository = new MemberRepository();
+            List<MemberObject> members = new List<MemberObject>();
+            members = repository.SearchByName(search);
             if (members.Count == 0)
             {
                 MessageBox.Show("No Result Found");
