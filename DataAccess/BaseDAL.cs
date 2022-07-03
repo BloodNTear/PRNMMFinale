@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
+    //Mai Quang Khai
     public class BaseDAL
     {
         public MemberProvider dataProvider { get; set; } = null;

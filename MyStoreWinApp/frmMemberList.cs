@@ -14,6 +14,7 @@ using System.Windows.Forms;
 
 namespace MyStoreWinApp
 {
+    //Nguyen Thanh Ha
     public partial class frmMemberList : Form
     {
         BindingSource source;

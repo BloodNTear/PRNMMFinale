@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.MemberRepository
 {
+    //Truong Thanh Trung
     public interface IMemberRepository
     {
         bool Create(MemberObject mem);

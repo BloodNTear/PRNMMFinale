@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
+    //Nguyen Thanh Ha
     public class MemberProvider
     {
         private string ConnectionString { get; set; }

@@ -1,5 +1,6 @@
 ﻿namespace BusinessObject
 {
+    //Nguyen Tan Trung
     public class MemberObject : IComparable<MemberObject>
     {
         public int MemberID { get; set; }

@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace MyStoreWinApp
 {
-
+    //Tran The Quang
     public partial class frmMemberDetail : Form
     {
         MemberRepository repository;

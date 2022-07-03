@@ -9,7 +9,7 @@ namespace DataAccess.MemberRepository
 {
     public class MemberRepository : IMemberRepository
     {
-        
+        //Mai Quang Khai
         public void InitAdmin()
         {
             MemberObject admin = MemberDBContext.Instance.GetDefaultAdmin();
@@ -22,7 +22,7 @@ namespace DataAccess.MemberRepository
 
             }
         }
-        
+        //Mai Quang Khai
         public bool Create(MemberObject mem)
         {
             try
@@ -35,7 +35,7 @@ namespace DataAccess.MemberRepository
                 throw new Exception("This email has been registered to another account!");
             }
         }
-
+        //Mai Quang Khai
         public bool Delete(int MemberID)
         {
             try
@@ -50,7 +50,7 @@ namespace DataAccess.MemberRepository
                 return false;
             }
         }
-
+        //Truong Thanh Trung
         public MemberObject Get(int MemberID)
         {
             try
@@ -65,7 +65,7 @@ namespace DataAccess.MemberRepository
                 return null;
             }
         }
-
+        //Truong Thanh Trung
         public IEnumerable<MemberObject> GetMemberList()
         {
             try
@@ -78,7 +78,7 @@ namespace DataAccess.MemberRepository
                 return null;
             }
         }
-
+        //Tran The Quang
         public bool Login(string Email, string Password)
         {
             if(Email == null || Password == null)
@@ -89,7 +89,7 @@ namespace DataAccess.MemberRepository
             }
            
         }
-
+        //Mai Quang Khai
         public bool Update(MemberObject mem)
         {
             try
@@ -103,25 +103,28 @@ namespace DataAccess.MemberRepository
                 return false;
             }
         }
+        //Nguyen Tan Trung
         public MemberObject GetByEmail(string email)
         {
             MemberObject mem = new MemberObject();
             mem = MemberDBContext.Instance.GetMemberByEmail(email);
             return mem;
         }
-
+        //Nguyen Tan Trung
         public List<MemberObject> SearchByName(string name)
         {
             List<MemberObject> result = new List<MemberObject>();
             result = MemberDBContext.Instance.GetMemberByName(name);
             return result;
         }
+        //Nguyen Tan Trung
         public List<MemberObject> SearchByCity(string city)
         {
             List<MemberObject> result = new List<MemberObject>();
             result = MemberDBContext.Instance.GetMemberByCity(city);
             return result;
         }
+        //Nguyen Tan Trung
         public List<MemberObject> SearchByCountry(string country)
         {
             List<MemberObject> result = new List<MemberObject>();

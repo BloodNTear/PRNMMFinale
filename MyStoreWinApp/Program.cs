@@ -12,6 +12,7 @@ namespace MyStoreWinApp
         {
             ApplicationConfiguration.Initialize();
             MemberRepository repository = new MemberRepository();
+            //Mai Quang Khai
             repository.InitAdmin();
             Application.Run(new frmLogin());            
         }

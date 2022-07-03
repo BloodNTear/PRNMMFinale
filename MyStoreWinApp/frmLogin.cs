@@ -13,6 +13,7 @@ using BusinessObject;
 
 namespace MyStoreWinApp
 {
+    //Tran The Quang
     public partial class frmLogin : Form
     {
         public frmLogin()

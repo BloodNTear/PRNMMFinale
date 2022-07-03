@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
+    //Mai Quang Khai
     public class MemberDBContext : BaseDAL
     {
         private static MemberDBContext instance = null;
@@ -28,7 +29,7 @@ namespace DataAccess
                 }
             }
         }
-
+        //Truong Thanh Trung
         public IEnumerable<MemberObject> GetMemberLists()
         {
             IDataReader dataReader = null;
@@ -64,7 +65,7 @@ namespace DataAccess
             
             return members;
         }
-
+        //Truong Thanh Trung
         public MemberObject GetMemberByID(int id)
         {
             MemberObject member = null;
@@ -102,7 +103,7 @@ namespace DataAccess
 
             return member;
         }
-
+        //Truong Thanh Trung
         public MemberObject GetMemberByEmail(string email)
         {
             MemberObject member = null;
@@ -143,6 +144,7 @@ namespace DataAccess
             return member;
         }
 
+        //Nguyen Tan Trung
         public List<MemberObject> GetMemberByName(string name)
         {
             MemberObject member = null;
@@ -185,6 +187,8 @@ namespace DataAccess
 
             return result;
         }
+        
+        //Nguyen Tan Trung
         public List<MemberObject> GetMemberByCity(string city)
         {
             MemberObject member = null;
@@ -227,6 +231,7 @@ namespace DataAccess
 
             return result;
         }
+        //Nguyen Tan Trung
         public List<MemberObject> GetMemberByCountry(string country)
         {
             MemberObject member = null;
@@ -269,7 +274,7 @@ namespace DataAccess
 
             return result;
         }
-
+        //Mai Quang Khai
         public void AddMember(MemberObject member)
         {
             
@@ -300,7 +305,7 @@ namespace DataAccess
             }
             
         }
-
+        ////Mai Quang Khai
         public void UpdateMember(MemberObject member)
         {
             try
@@ -360,7 +365,7 @@ namespace DataAccess
                 CloseConnection();
             }
         }
-
+        //Mai Quang Khai
         public void RemoveMember(int memberID)
         {
             try
@@ -385,7 +390,7 @@ namespace DataAccess
                 CloseConnection();
             }
         }
-
+        //Tran The Quang
         public bool Login(string Email, string Password)
         {
             MemberObject member = null;
